@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <h1>Quantos sálarios mínimos você recebe?</h1>
+
+    <script>
+        let salario = prompt("Informe o seu salário:")
+        let smin = 1212
+
+        let n = (salario / smin).toFixed(2)
+
+        if(n <= 1){
+            document.write("Você recebe " + n + " salário mínimo.")
+        }
+        else{
+            document.write("Você recebe " + n + " salários mínimos.")
+        }
+    </script>
+</body>
+</html>

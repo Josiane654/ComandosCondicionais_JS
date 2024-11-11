@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule suas Calorias</title>
+    <!-- 1 - Criar um programa em Java, que informe a quantidade total de calorias de uma refeição a partir do usuário que deverá informar o prato, a sobremesa e a bebida. Sugestão: enumere cada opção de prato, sobremesa e bebida. Ou seja: Prato: 1 - vegetariano, 2 – Peixe, 3 – Frango, 4 – Carne; Sobremesa: 1 – Abacaxi, 2 – Sorvete diet, 3 – Mouse diet, 4 – Mouse chocolate; Bebida: 1 – Chá, 2 - Suco de laranja, 3 – Suco de melão, 4 – Refrigerante diet. -->
+</head>
+
+<body>
+    <h1>Calcule suas Calorias de acordo com o seu prato:</h1>
+
+    <script>
+        const caloriasPrato = [180, 230, 250, 350];
+        const caloriasSobremesa = [75, 110, 170, 200];
+        const caloriasBebida = [20, 70, 100, 65];
+
+        let prato = prompt("Escolha o prato: 1 - Vegetariano, 2 - Peixe, 3 - Frango, 4 - Carne") - 1;
+        let sobremesa = prompt("Escolha a sobremesa: 1 - Abacaxi, 2 - Sorvete diet, 3 - Mousse diet, 4 - Mousse chocolate") - 1;
+        let bebida = prompt("Escolha a bebida: 1 - Chá, 2 - Suco de laranja, 3 - Suco de melão, 4 - Refrigerante diet") - 1;
+
+        let totalCalorias = caloriasPrato[prato] + caloriasSobremesa[sobremesa] + caloriasBebida[bebida];
+        document.write("O total de calorias a ser consumido é: " + totalCalorias + "kcal.");
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Ordem Decrescente</h1>
+
+    <script>
+        let a = parseInt(prompt("Entre com o primeiro número:"))
+        let b = parseInt(prompt("Entre com o segundo número:"))
+        let c = parseInt(prompt("Entre com o terceiro número:"))
+        
+        if(a > b && b > c){
+            document.write("A ordem dos números escritos é: <br>" + a + "<br>"+ b + "<br>" + c)
+        }
+        else if(b > c && c > a){
+            document.write("A ordem dos números escritos é: <br>" + b + "<br>"+ c + "<br>" + a)
+        }
+        else if(c > b && b > a){
+            document.write("A ordem dos números escritos é: <br>" + c + "<br>"+ b + "<br>" + a)
+        }
+        else if(a > c && c > b){
+            document.write("A ordem dos números escritos é: <br>" + a + "<br>"+ c + "<br>" + b)
+        }
+        else if(b > a && a > c){
+            document.write("A ordem dos números escritos é: <br>" + b + "<br>"+ a + "<br>" + c)
+        }
+        else if(c > a && a > b){
+            document.write("A ordem dos números escritos é: <br>" + c + "<br>"+ a + "<br>" + b)
+        }
+        else if(a == b && b == c){
+            document.write("Os números informados são iguais: <br>" + a + ", "+ b + " e " + c)
+        }
+    </script>
+</body>
+</html>
